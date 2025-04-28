@@ -22,8 +22,13 @@ def main():
     score = 0
     password = input("Введите пароль: ")
 
-    checks = [is_very_long, has_digit,
-              has_upper_letters, has_lower_letter, has_symbols]
+    checks = [
+        is_very_long, 
+        has_digit,
+        has_upper_letters, 
+        has_lower_letter, 
+        has_symbols
+    ]
 
     for check in checks:
         if check(password):
